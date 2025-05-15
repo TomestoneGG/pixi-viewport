@@ -62,7 +62,7 @@ export class InputManager
         }
 
         this.wheelFunction = (e) => this.handleWheel(e);
-        this.viewport.options.events.domElement.addEventListener(
+        this.viewport.options.events.domElement?.addEventListener(
             'wheel',
             this.wheelFunction as any,
             { passive: this.viewport.options.passiveWheel });
